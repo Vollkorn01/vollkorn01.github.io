@@ -1,0 +1,390 @@
+/*------------------------------------------------------------------
+[Responsive Stylesheet]
+
+Project     : p1-FountainHtml
+Version     : 1.0
+Author      : Md. Ekramul Hassan Avi
+Author URI  : https://www.tigertemplate.com
+-------------------------------------------------------------------*/
+
+.slicknav_menu {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .common_style .fs64 {
+    font-size: 54px;
+  }
+  .hero_section::before {
+    top: -50px;
+    background-size: 70%;
+  }
+  .partner_section {
+    margin-top: -50px;
+  }
+  .hero_section {
+    overflow: hidden;
+  }
+  .feature_section:before,
+  .feature_section:after {
+    background-size: 70%;
+  }
+  .tips_section::before {
+    background-size: 60%;
+  }
+  .how_it_work .btn-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .how_it_work .btn-group > * {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+  }
+  .faq_section::before,
+  .faq_section::after {
+    background-size: 30%;
+  }
+  .contact_section::before {
+    background-size: 50%;
+  }
+  .install_req::after {
+    background-size: 70%;
+  }
+}
+
+@media screen and (max-width: 991.99px) {
+  /*menus css*/
+  #phn-menu {
+    display: none !important;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+  .slicknav_btn {
+    margin: 0;
+    text-shadow: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    border-radius: 4px;
+    background-color: transparent;
+  }
+  .slicknav_menu .slicknav_menutxt {
+    text-shadow: none;
+    font-size: 0;
+  }
+  .slicknav_btn {
+    padding: 0;
+  }
+  .slicknav_menu .slicknav_icon-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #4fbcc9;
+  }
+  .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+    margin-top: 4px;
+  }
+  .slicknav_menu {
+    background: transparent;
+    padding: 12px 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+  }
+  .slicknav_menu .slicknav_icon {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    float: left;
+  }
+  .slicknav_nav {
+    width: 143px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: absolute;
+    top: calc(100% + 20px);
+    right: 0;
+    transform: none;
+    padding: 8px 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  }
+  .slicknav_nav a:hover {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #4fbcc9 !important;
+  }
+  /*menus css*/
+
+  /* fonts size */
+  .common_style .fs64 {
+    font-size: 44px;
+  }
+  .common_style .fs48 {
+    font-size: 38px;
+  }
+  .common_style .fs32 {
+    font-size: 26px;
+  }
+  .common_style .fs24 {
+    font-size: 20px;
+  }
+  .common_style .fs20 {
+    font-size: 16px;
+  }
+  .common_style .fs18 {
+    font-size: 16px;
+  }
+  .common_style .fs16 {
+    font-size: 14px;
+  }
+  /* fonts size */
+  .hero_section::before {
+    background-size: 50%;
+  }
+  .partner_section {
+    margin-top: -30px;
+  }
+  .common_style .min_h56 {
+    min-height: 46px;
+  }
+  .team_bg::before {
+    left: -150px;
+    background-size: contain;
+  }
+  .team_bg::after {
+    right: -240px;
+    background-size: 60%;
+  }
+  .accordion_section::before {
+    background-size: 50%;
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .hero_img {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 100px;
+  }
+  .hero_content {
+    margin-top: -140px;
+    z-index: 1;
+  }
+  .img_wings::before,
+  .img_wings::after {
+    background-size: 70%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* fonts size */
+  .common_style .fs64 {
+    font-size: 40px;
+  }
+  .common_style .fs48 {
+    font-size: 48px;
+  }
+  .common_style .fs32 {
+    font-size: 26px;
+  }
+  .common_style .fs24 {
+    font-size: 20px;
+  }
+  .common_style .fs20 {
+    font-size: 18px;
+  }
+  .common_style .fs18 {
+    font-size: 14px;
+  }
+  /* fonts size */
+  .hero_content {
+    margin-top: -116px;
+  }
+  .tips_section::before {
+    background-size: 100%;
+    background-image: url("../img/what_new_bg_xs.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 244px;
+    height: 1206px;
+  }
+  .py-md-5.py-4 {
+    padding: 160px 0 !important;
+  }
+  .img_wings::before {
+    display: none;
+  }
+  .img_wings::after {
+    background-size: contain;
+    right: -15px;
+    background-image: url("../img/our_mission_left_shape_xs.svg");
+    top: auto;
+    width: 360px;
+    height: 524px;
+    transform: none;
+    bottom: -90px;
+  }
+  .hero_img {
+    margin: 0 70px;
+  }
+  .common_style .px_xs_12 {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  .site_logo {
+    padding: 12px;
+  }
+  .absolute_xs_header {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent !important;
+  }
+  .tips_inner::before,
+  .feature_section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-image: url("../img/tips_inner_xs_bg.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 100%;
+    height: 1464px;
+    z-index: -1;
+    transform: translateY(-50%);
+  }
+  .feature_section:after {
+    display: none;
+  }
+  .common_style .w_xs_auto {
+    width: auto;
+  }
+  .common_style header .min_h56 {
+    min-height: 36px;
+  }
+  .common_style .min_h56 {
+    min-height: 48px;
+  }
+  header .btn {
+    font-size: 12px !important;
+  }
+  .partner_section {
+    margin-top: 0;
+  }
+  .hero_section::before {
+    top: -30px;
+  }
+  .team_bg::before {
+    left: 0;
+    top: 0;
+    background-image: url("../img/team_bg_left_xs.svg");
+    width: 196px;
+    height: 479px;
+    transform: none;
+  }
+  .team_bg::after {
+    right: 0;
+    top: auto;
+    background-image: url("../img/team_bg_right_xs.svg");
+    width: 253px;
+    height: 475px;
+    transform: none;
+    background-size: contain;
+    bottom: -120px;
+  }
+  .faq_section::before,
+  .accordion_section::before {
+    left: 0;
+    top: auto;
+    background-image: url("../img/accordion_section_left_bg_xs.svg");
+    width: 360px;
+    height: 150px;
+    background-size: contain;
+    background-position: bottom left;
+    bottom: 0;
+  }
+
+  .faq_section::after,
+  .contact_section::before {
+    display: none;
+  }
+
+  .install_req::after {
+    background-size: 55%;
+  }
+  .common_style .your_game .fs48 {
+    font-size: 43px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1326px;
+  }
+
+  .gap_x_16 {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .gap_x_16 > * {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .gap_x_24 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .gap_x_24 > * {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .gap_x_32 {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  .gap_x_32 > * {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .gap_x_64 {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+  .gap_x_64 > * {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .gap_x_80 {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .gap_x_80 > * {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

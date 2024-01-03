@@ -1,100 +1,610 @@
 <!DOCTYPE html>
-<html dir="auto" lang="en">
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8" />
-	<title>My Page Title</title>
+  <!-- site meta -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="title" content="p1-FountainHtml" />
+  <meta name="description" content="p1-FountainHtml" />
+  <meta name="keywords" content="p1-FountainHtml" />
+  <meta name="author" content="p1-FountainHtml" />
 
-	<meta name="description" content="My Page Description" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="icon" href="assets/favicon.png" />
+  <!-- site favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg" />
 
-	<meta property="og:title" content="My Page Title" />
-	<meta property="og:description" content="My Page Description" />
-	<meta property="og:image" content="assets/og-image.png" />
+  <!-- site title -->
+  <title site_title>Fountain</title>
 
-	<link rel="stylesheet" href="assets/tobi.css" />
-	<link rel="stylesheet" href="assets/style.css" />
+  <!-- owl carousel css -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/magnific-popup.min.css" />
+
+  <!-- slicknav css -->
+  <link rel="stylesheet" href="css/slicknav.min.css" />
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- responsive stylesheet -->
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
-	<body>
-		<main>
-<header class="app__header container">
-	<div class="app__logo-wrapper"> <img class="app__logo" src="content/image/tkbdifwhu41kreptfae1.png" alt="Marktplatz"></div>
-	<div class="app__infos">
-		<h1 class="app__name">Marktplatz</h1>
-		<p class="app__description">Verschenken statt Wegwerfen 🌍🌱🙌</p>
-		<div class="app__buttons app__buttons--desktop">
-		</div>
-	</div>
-</header>
-<div class="app__buttons app__buttons--mobile container">
-</div>
-<section class="app__screenshots app__section">
-	<div class="container">
-		<h2 class="app__section-title">Screenshots</h2>
-	</div>
-	<div class="app__screenshots-wrapper container-desktop">
-		<div class="app__screenshots-list">
-			<a href="content/image/yanh2i4p8txvrxl2ecdb.png" class="lightbox">
-				<img src="content/image/yanh2i4p8txvrxl2ecdb.png" class="app__screenshot" alt="" />
-			</a>
-			<a href="content/image/eyf2up6tbqeck87yaznq.png" class="lightbox">
-				<img src="content/image/eyf2up6tbqeck87yaznq.png" class="app__screenshot" alt="" />
-			</a>
-			<a href="content/image/vckuv7jaezqdf527ehgp.png" class="lightbox">
-				<img src="content/image/vckuv7jaezqdf527ehgp.png" class="app__screenshot" alt="" />
-			</a>
-			<a href="content/image/gsd48ttahm34s51yyp10.png" class="lightbox">
-				<img src="content/image/gsd48ttahm34s51yyp10.png" class="app__screenshot" alt="" />
-			</a>
-		</div>
-	</div>
-</section>
-<section class="app__fulldescription app__section container">
-	<h2 class="app__section-title">Beschreibung</h2>
-	<div class="app__fulldescription-content">
-		<p>Marktplatz ist die einfachste Möglichkeit, um Sachen zu verschenken, welche du nicht mehr brauchst.
-Einfach Bild hochladen, Beschreibung hinzufügen und Interessierte werden sich bei dir melden.</p>
-<p>Funktionalitäten:</p>
-<ul>
-<li>Einfach Objekte hochladen</li>
-<li>Suchfunktion</li>
-<li>Integrierter Chat</li>
-</ul>
-<p>Mit ❤️ in der Schweiz entwickelt</p>
 
-	</div>
-</section>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__container">
-					<p class="footer__love">
-						<script>document.write('&copy;' + (new Date()).getFullYear());</script><noscript>&copy;2020</noscript> All rights reserved
-							&mdash; Template by <a href="https://www.sandoche.com" target="_blank">Sandoche</a>
-							&mdash; Powered by <a href="https://t3mpl.n4no.com/" target="_blank" title="T3MPL Editor">T3MPL</a>
-					</p>
-					<ul class="footer__links">
-							<li class="footer__link">
-								<a href="page-1.html">Privacy</a>
-							</li>
-							<li class="footer__link">
-								<a href="https://n4no.com/" targe="_blank">GitHub</a>
-							</li>
-							<li class="footer__link">
-								<a href="https://n4no.com/" targe="_blank">GitHub</a>
-							</li>
-					</ul>
-				</div>
-			</div>
-		</footer>
+<body class="common_style">
+  <!-- site_header -->
+  <header class="site_header z-3">
+    <div class="sticky_header w-100 z-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center justify-content-between">
+            <a href="index.html" class="site_logo"><img src="img/logo.svg" alt="img" class="mw-100" /></a>
+            <nav id="nav-menu" class="site_nav flex-shrink-0 px-3">
+              <ul id="phn-menu" class="site_nav_ul d-sm-flex align-items-sm-center justify-content-sm-between gap-sm-3">
+                <li><a href="fountain.html" class="fs16 text-600 text-primary py-2 px-3" data-i18n="menu_product">The
+                    fountain</a></li>
+                <li><a href="drinks.html" class="fs16 text-600 text-primary py-2 px-3" data-i18n="menu_drink">Drinks</a>
+                </li>
+                <li><a href="mission.html" class="fs16 text-600 text-primary py-2 px-3"
+                    data-i18n="menu_mission">Mission</a></li>
+                <li><a href="team.html" class="fs16 text-600 text-primary py-2 px-3" data-i18n="menu_team">Team</a></li>
+                <li class="d-lg-none d-flex justify-content-center"><a href="contact-us.html"
+                    class="btn btn-info radius50 px_xs_12 px_32 min_h56 fs16 text-600 flex-shrink-0"
+                    data-i18n="getintouch">Get in touch</a></li>
+              </ul>
+            </nav>
+            <div class="d-flex align-items-center justify-content-end gap-4">
+              <select name="ln" id="language"
+                class="custom-select form-select text-dark border-white bg-white fs16 text-600" role="button">
+                <option selected value="en">EN</option>
+                <option value="de">DE</option>
+              </select>
+              <a href="contact-us.html"
+                class="btn btn-info radius50 px_xs_12 px_32 min_h56 fs16 text-600 flex-shrink-0 d-lg-inline-flex d-none"
+                data-i18n="getintouch">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- site_header -->
 
-		<script type="text/javascript" src="assets/tobi.min.js" /></script>
-		<script>
-			window.onload = function () {
-				var tobi = new Tobi();
-			};
-		</script>
+  <!-- hero_section -->
+  <section class="hero_section pt-5">
+    <div class="container pt-lg-5 pb-sm-0 pb-3">
+      <div class="row pt-4">
+        <div class="col-md-4">
+          <div class="hero_img"><img src="img/hero_img.png" alt="img" class="mw-100" /></div>
+        </div>
+        <div class="col-md-7 offset-md-1 pt-xl-5 mt-xd-5 d-md-block d-flex align-items-center position-relative">
+          <div class="hero_content">
+            <h2 class="fs64 text-800 text-primary text-md-start text-center" data-i18n="lp_header1"> The sustainable &
+              healthy dispenser for innovative offices</h2>
+            <p class="fs18 py-lg-3 my-3 text-md-start text-center" data-i18n="lp_text1">We help you replace the
+              PET-bottles in your location and offer a variation of healthy beverages from one touchpoint.</p>
+              <div class="d-flex align-items-center">
+                <a href="fountain.html"
+                  class="fs16 text-500 py-3 text-dark d-flex align-items-center justify-content-sm-start justify-content-center ms-2 mt-sm-0 mt-3"
+                  data-i18n="lp_guider1">Discover our fountain</a>
+                <img src="img/arrow_right_gray.svg" alt="img" class="ms-2" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero_section -->
 
-  </body>
+  <!-- partner_section -->
+  <section class="partner_section bg-light py-5">
+    <div class="container py-3 mt-lg-0 mt-3">
+      <div class="row justify-content-center">
+        <div class="col-xl-12">
+          <p class="fs16 text-500 text-center" data-i18n="lp_partners">Already creating more circular and healthy
+            locations with us</p>
+        </div>
+        <div class="col-xl-10 mt-4">
+          <div class="partner_slider owl-carousel owl-theme">
+            <div class="item d-flex align-items-center justify-content-center">
+              <img src="img/partner_1.png" alt="img" class="w-auto mx-100" />
+            </div>
+            <div class="item d-flex align-items-center justify-content-center">
+              <img src="img/partner_2.png" alt="img" class="w-auto mx-100" />
+            </div>
+            <div class="item d-flex align-items-center justify-content-center">
+              <img src="img/partner_3.png" alt="img" class="w-auto mx-100" />
+            </div>
+            <div class="item d-flex align-items-center justify-content-center">
+              <img src="img/partner_4.png" alt="img" class="w-auto mx-100" />
+            </div>
+            <div class="item d-flex align-items-center justify-content-center">
+              <img src="img/partner_1.png" alt="img" class="w-auto mx-100" />
+            </div>
+            <div class="item d-flex align-items-center justify-content-center">
+              <img src="img/partner_2.png" alt="img" class="w-auto mx-100" />
+            </div>
+            <div class="item d-flex align-items-center justify-content-center">
+              <img src="img/partner_3.png" alt="img" class="w-auto mx-100" />
+            </div>
+            <div class="item d-flex align-items-center justify-content-center">
+              <img src="img/partner_4.png" alt="img" class="w-auto mx-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- partner_section -->
+
+  <!-- how_it_work -->
+  <section class="how_it_work py-5 mt-sm-0 mt-5">
+    <div class="container-md container-fluid py-3 mt-sm-0 mt-3">
+      <div class="row py-3 justify-content-center mt-sm-0 mt-3">
+        <div class="col-xl-12 mb-5 pb-3">
+          <h4 class="fs48 text-800 text-primary text-center" data-i18n="lp_header2">How it works?</h4>
+        </div>
+        <div class="col-xxl-12 pt-3">
+          <div class="row gap_x_80 justify-content-center">
+            <div class="col-xl-6 col-md-5 col-sm-4 col-11 mb-sm-0 mb-5 pb-sm-0 pb-3 d-flex align-items-center">
+              <div class="position-relative d-flex align-items-center justify-content-center">
+                <img src="img/video_thum.png" alt="img" class="mw-100" />
+                <div class="position-absolute">
+                  <a href="https://www.youtube.com/watch?v=vJoNqBZ9QlM&ab_channel=RelaxationFilm"
+                    class="vid_play_btn popup-youtube"><img src="img/play_btn.svg" alt="img" /></a>
+                  <p class="fs16 text-600 text-capitalize mt-4 position-absolute text-white text-nowrap">play video</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-7 col-sm-8 col-12 d-flex align-items-center">
+              <ul class="how_it_work_list d-grid gap-5 w-100">
+                <li class="opacity-50 d-flex align-items-center gap-3 w-100">
+                  <div class="img_round radius50p border border-light p_6_4">
+                    <img src="img/mini_logo.svg" alt="img" class="mw-100" />
+                  </div>
+                  <div class="d-grid gap-3">
+                    <h4 class="fs20 text-600 text-info" data-i18n="lp_step1">Select your water type</h4>
+                    <div class="btn-group gap-2">
+                      <button
+                        class="btn btn-sm btn-purple min_h28 px-2 fs14 text-500 rounded-1 text-capitalize w-auto py-0"><img
+                          src="img/Sparkling.svg" alt="img" class="me-1">Sparkling</button>
+                      <button
+                        class="btn btn-sm btn-success min_h28 px-2 fs14 text-500 rounded-1 text-capitalize w-auto py-0"><img
+                          src="img/cold.svg" alt="img" class="me-1" /> cold</button>
+                      <button
+                        class="btn btn-sm btn-danger min_h28 px-2 fs14 text-500 rounded-1 text-capitalize w-auto py-0"><img
+                          src="img/hot.svg" alt="img" class="me-1" /> hot</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="opacity-50 d-flex align-items-center gap-3 w-100">
+                  <div class="img_round radius50p border border-light p_6_4 flex-shrink-0">
+                    <img src="img/mini_logo.svg" alt="img" class="mw-100" />
+                  </div>
+                  <div class="d-grid gap-3">
+                    <h4 class="fs20 text-600 text-info" data-i18n="lp_step2">Choose one of our natural aromas</h4>
+                    <div class="btn-group gap-2">
+                      <button
+                        class="btn btn-sm btn-outline-light min_h28 px-2 fs14 text-500 rounded-1 text-capitalize w-auto py-0">
+                        <img src="img/lemon.svg" alt="img" class="me-1" /> Lemon/ginger
+                      </button>
+                      <button
+                        class="btn btn-sm btn-outline-light min_h28 px-2 fs14 text-500 rounded-1 text-capitalize w-auto py-0">
+                        <img src="img/Strawberry.svg" alt="img" class="me-1" /> Strawberry
+                      </button>
+                      <button
+                        class="btn btn-sm btn-outline-light min_h28 px-2 fs14 text-500 rounded-1 text-capitalize w-auto py-0">
+                        <img src="img/Peach.svg" alt="img" class="me-1" /> Peach
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="opacity-50 d-flex align-items-center gap-3 w-100">
+                  <div class="img_round radius50p border border-light p_6_4 flex-shrink-0">
+                    <img src="img/mini_logo.svg" alt="img" class="mw-100" />
+                  </div>
+                  <div class="d-grid gap-3">
+                    <h4 class="fs20 text-600 text-info" data-i18n="lp_step3">Add enhancements</h4>
+                    <div class="btn-group gap-2">
+                      <button
+                        class="btn btn-sm btn-outline-light min_h28 px-2 fs14 text-500 rounded-1 text-capitalize w-auto py-0">
+                        <img src="img/star_gold.svg" alt="img" class="me-1" /> Caffeine
+                      </button>
+                      <button
+                        class="btn btn-sm btn-outline-light min_h28 px-2 fs14 text-500 rounded-1 text-capitalize w-auto py-0">
+                        <img src="img/star_gold.svg" alt="img" class="me-1" /> Electrolyte
+                      </button>
+                      <button
+                        class="btn btn-sm btn-outline-light min_h28 px-2 fs14 text-500 rounded-1 text-capitalize w-auto py-0">
+                        <img src="img/star_gold.svg" alt="img" class="me-1" /> Vitamine C
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="opacity-50 d-flex align-items-center gap-3 w-100">
+                  <div class="img_round radius50p border border-light p_6_4 flex-shrink-0">
+                    <img src="img/mini_logo.svg" alt="img" class="mw-100" />
+                  </div>
+                  <div class="d-grid gap-3 w-100">
+                    <h4 class="fs20 text-600 text-info" data-i18n="lp_step4">
+                      Refill & enjoy your sustainable, <br />
+                      functional drink - Cheers!
+                    </h4>
+                  </div>
+                </li>
+            </div>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- how_it_work -->
+
+  <!-- tips_section -->
+  <section class="tips_section position-relative z-1 position-relative z-2 py-5 mb-sm-0 mb-5">
+    <div class="container-md container-fluid py-3 mb-sm-0 mb-3">
+      <div class="row py-3 justify-content-center mb-sm-0 mb-3">
+        <div class="col-xl-6 mb-5 pb-3 text-sm-center text-start">
+          <h3 class="fs48 text-primary text-800" data-i18n="lp_header3">Benefits at a glance</h3>
+          <p class="fs16 text-500 mt-4" data-i18n="lp_text3">Revolutionize the beverage consumption in your office</p>
+        </div>
+        <div class="col-xxl-9 col-xl-10">
+          <div class="row gap_x_32 justify-content-center">
+            <div class="col-lg-4 col-sm-4 py-3">
+              <div
+                class="radius8 border border-purple bg-purple overflow-hidden h-100 bg-white bg-opacity-75 backdrop_32">
+                <img src="img/about_thum1.jpg" alt="img" class="w-100 mb-2" />
+                <div class="py-4 px_32 d-grid gap-3">
+                  <h4 class="fs20 text-700 text-purple text-center px-sm-2" data-i18n="lp_box1header">Ditch plastic
+                    bottles by simply refilling</h4>
+                  <p class="text-500" data-i18n="lp_box1text">Our fountain enables you to choose an alternative to
+                    plastic
+                    bottles. You can conveniently fill up flavoured drinks in your reusable bottle or cup, cutting
+                    CO2-Emissions by more than 50%. Become a part of the sustainable future by going waste-free.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 py-3">
+              <div
+                class="radius8 border border-purple bg-purple overflow-hidden h-100 bg-white bg-opacity-75 backdrop_32">
+                <img src="img/about_thum2.jpg" alt="img" class="w-100 mb-2" />
+                <div class="py-4 px_32 d-grid gap-3">
+                  <h4 class="fs20 text-700 text-purple text-center px-sm-2" data-i18n="lp_box2header">Cut your cost by
+                    50%
+                    on average</h4>
+                  <p class="text-500" data-i18n="lp_box2text">Designed for low maintenance and automated reordering the
+                    fountain saves offices on average 50% of their beverage expenses and let’s you focus on what you are
+                    best at. Less packaging also means less expenses - so you only pay for what you really get.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 py-3">
+              <div
+                class="radius8 border border-purple bg-purple overflow-hidden h-100 bg-white bg-opacity-75 backdrop_32">
+                <img src="img/about_thum3.jpg" alt="img" class="w-100 mb-2" />
+                <div class="py-4 px_32 d-grid gap-3">
+                  <h4 class="fs20 text-700 text-purple text-center px-sm-2" data-i18n="lp_box3header">Offer Healthy &
+                    tasty drinks</h4>
+                  <p class="text-500" data-i18n="lp_box3text">Tailor the drink to your specific needs by choosing the
+                    type
+                    of water, one of our natural flavours and add from up to 2 functional enhancement to get you ready
+                    for
+                    your tasks ahead. Ready to experience your full potential every single day?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- tips_section -->
+
+  <!-- our_journey -->
+  <section class="our_journey py-5 overflow-hidden">
+    <div class="container py-3">
+      <div class="row py-3 justify-content-center text-sm-center">
+        <div class="col-xxl-9 col-xl-10">
+          <h4 class="fs48 text-800 text-primary px-xl-5 mx-xl-5" data-i18n="lp_header4">Our Journey to reduce 1 billion
+            PET bottles</h4>
+          <div class="mt-4 d-sm-grid d-none gap-4">
+            <p class="fs16 text-500" data-i18n="lp_text4">The idea of founding a company together to fight the extensive
+              use of single-use plastic came up at a family dinner. Luca told Alex about his recent pain point that
+              every
+              time he wants a flavoured drink while commuting, he relies on a single-use plastic bottle even though he
+              has
+              his reusable bottle with him.</p>
+            <p class="fs16 text-500">In the following month Alex recognized the extent of the problem at a Beach
+              Clean-up
+              in Ghana and once he returned, he was very excited to start project “Fountain” and tackle the plastic
+              problem.</p>
+            <p class="fs16 text-500">Eager to make a change we started building our first prototypes and tested them
+              with
+              different organizations where it became evident that we are not the only ones ready for a change towards
+              more circularity.</p>
+          </div>
+          <div class="my-sm-3 py-sm-5 my-4">
+            <div class="my-3 z-1 position-relative">
+              <img src="img/our_mission.jpg" alt="img" class="w-100 radius8 d-sm-block d-none" />
+              <img src="img/our_mission_xs.jpg" alt="img" class="w-100 radius8 d-sm-none d-block" />
+            </div>
+          </div>
+          <div class="d-flex flex-column align-items-center justify-content-center z-2 position-relative">
+            <div class="d-sm-none d-grid gap-4 mb-3 pb-3">
+              <p class="fs16 text-500">The idea of founding a company together to fight the extensive use of single-use
+                plastic came up at a family dinner. Luca told Alex about his recent pain point that every time while
+                commuting he wants a flavoured drink and he relies on a single-use plastic bottle even though he has his
+                reusable bottle with him.</p>
+              <p class="fs16 text-500">After a beach clean-up in Ghana Alex saw the extent of the pollution by himself
+                and
+                was committed to change the status quo.</p>
+            </div>
+            <a href="mission.html" class="btn btn-info radius50 fs16 text-600 min_h56 w_240 mw-100 mt-5"
+              data-i18n="mission_callToAction1">Our mission</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- our_journey -->
+
+  <!-- testimonials -->
+  <section class="testimonials py-5 overflow-hidden position-relative z-1">
+    <div class="container py-3 mb-4">
+      <div class="row py-3 mb-3 justify-content-center">
+        <div class="col-xxl-9 col-xl-10">
+          <h4 class="fs48 text-800 text-primary text-center pb-3" data-i18n="lp_testimonials">Testimonials</h4>
+          <div class="row pt-5 gap_x_16">
+            <div class="col-sm-4 pt-3">
+              <div class="testi_item px-3 pt-3 pb-2 d-grid gap-1 radius8 shadow bg-white bg-opacity-75 backdrop_32">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <img src="img/avater_xs.png" alt="img" class="mw-100 radius50p" />
+                  <h4 class="fs24 text-700 text-primary" data-i18n="lp_testimonial_header1">Josh ABC</h4>
+                </div>
+                <p class="fs14 text-500 text-muted" data-i18n="lp_testimonial_job1">Office Manager at BCG</p>
+                <p class="fs16 text-700 text-primary" data-i18n="lp_testimonial_time1">5 months ago</p>
+                <p class="fs14 text-500 text-dark lh24" data-i18n="lp_testimonial_text1">The dispenser is awesome and
+                  reduces our plastic consumption by half. We love it</p>
+                <ul class="rating_li d-flex align-items-center gap-1">
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 pt-3">
+              <div class="testi_item px-3 pt-3 pb-2 d-grid gap-1 radius8 shadow bg-white bg-opacity-75 backdrop_32">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <img src="img/avater_xs.png" alt="img" class="mw-100 radius50p" />
+                  <h4 class="fs24 text-700 text-primary" data-i18n="lp_testimonial_header1">Anna Example</h4>
+                </div>
+                <p class="fs14 text-500 text-muted" data-i18n="lp_testimonial_job1">Office Manager at BCG</p>
+                <p class="fs16 text-700 text-primary" data-i18n="lp_testimonial_time1">5 month ago</p>
+                <p class="fs14 text-500 text-dark lh24" data-i18n="lp_testimonial_text1">The dispenser is awesome and
+                  reduces our
+                  plastic consumption by half. We love it</p>
+                <ul class="rating_li d-flex align-items-center gap-1">
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 pt-3">
+              <div class="testi_item px-3 pt-3 pb-2 d-grid gap-1 radius8 shadow bg-white bg-opacity-75 backdrop_32">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <img src="img/avater_xs.png" alt="img" class="mw-100 radius50p" />
+                  <h4 class="fs24 text-700 text-primary" data-i18n="lp_testimonial_header2">Josh ABC</h4>
+                </div>
+                <p class="fs14 text-500 text-muted" data-i18n="lp_testimonial_job2">Office Manager at BCG</p>
+                <p class="fs16 text-700 text-primary" data-i18n="lp_testimonial_time2">5 months ago</p>
+                <p class="fs14 text-500 text-dark lh24" data-i18n="lp_testimonial_text2">The dispenser is awesome and
+                  reduces our
+                  plastic consumption by half. We love it</p>
+                <ul class="rating_li d-flex align-items-center gap-1">
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                  <li><img src="img/star_icon.svg" alt="img" class="mw-100" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonials -->
+
+  <!-- support_section -->
+  <section class="support_section py-5">
+    <div class="container-fluid pb-3">
+      <div class="row justify-content-center">
+        <div class="col-xl-12">
+          <p class="fs16 text-500 text-center" data-i18n="lp_supporters">Proudly supported by</p>
+        </div>
+        <div class="col-xl-9 col-lg-9">
+          <div class="row mb-4 gap_x_64">
+            <div
+              class="col-lg-2 col-sm-4 col-6 pt-3 mt-3 px-sm-0 px-4 d-flex align-items-center justify-content-center">
+              <a href="#"><img src="img/supporter_1.png" alt="img" class="mw-100" /></a>
+            </div>
+            <div
+              class="col-lg-2 col-sm-4 col-6 pt-3 mt-3 px-sm-0 px-4 d-flex align-items-center justify-content-center">
+              <a href="#"><img src="img/supporter_2.png" alt="img" class="mw-100" /></a>
+            </div>
+            <div
+              class="col-lg-2 col-sm-4 col-6 pt-3 mt-3 px-sm-0 px-4 d-flex align-items-center justify-content-center">
+              <a href="#"><img src="img/supporter_3.png" alt="img" class="mw-100" /></a>
+            </div>
+            <div
+              class="col-lg-2 col-sm-4 col-6 pt-3 mt-3 px-sm-0 px-4 d-flex align-items-center justify-content-center">
+              <a href="#"><img src="img/supporter_4.png" alt="img" class="mw-100" /></a>
+            </div>
+            <div
+              class="col-lg-2 col-sm-4 col-6 pt-3 mt-3 px-sm-0 px-4 d-flex align-items-center justify-content-center">
+              <a href="#"><img src="img/supporter_5.png" alt="img" class="mw-100" /></a>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6 pt-3 mt-3 px-4 d-flex align-items-center justify-content-center">
+              <a href="#"><img src="img/supporter_6.png" alt="img" class="mw-100" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- support_section -->
+
+  <!-- news_section -->
+  <section class="news_section py-5 bg-light">
+    <div class="container-md container-fluid py-3">
+      <div class="row justify-content-center py-3">
+        <div class="col-xxl-9 col-xl-10">
+          <h4 class="fs48 text-800 text-primary text-center" data-i18n="lp_blog_header">Our latest news</h4>
+          <div class="row py-5 my-3">
+            <div class="col-sm-4 py-3">
+              <div class="h-100 radius8 shadow overflow-hidden bg-white">
+                <img src="img/blog_thum.jpg" alt="img" class="w-100" />
+                <div class="px-3 pt-3 pb-2 d-grid gap-1">
+                  <h4 class="fs24 text-700 text-primary" data-i18n="lp_blog_title1">Article Title</h4>
+                  <h5 class="fs16 text-700 text-info" data-i18n="lp_blog_subtitle1">Article subtitle</h5>
+                  <p class="fs14 text-500 three_line_dots" data-i18n="lp_blog_text1">With fountain. we reduce the amount
+                    of plastic waste and we do it with our unique network of zero-waste beverage stations...</p>
+                  <p class="fs14 text-500 opacity-50 text-end" data-i18n="lp_blog_date1">02.11.23</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 py-3">
+              <div class="h-100 radius8 shadow overflow-hidden bg-white">
+                <img src="img/blog_thum.jpg" alt="img" class="w-100" />
+                <div class="px-3 pt-3 pb-2 d-grid gap-1">
+                  <h4 class="fs24 text-700 text-primary" data-i18n="lp_blog_title2">Article Title</h4>
+                  <h5 class="fs16 text-700 text-info" data-i18n="lp_blog_subtitle2">Article subtitle</h5>
+                  <p class="fs14 text-500 three_line_dots" data-i18n="lp_blog_text2">With fountain. we reduce the amount
+                    of plastic waste and we do it with our unique network of zero-waste beverage stations...</p>
+                  <p class="fs14 text-500 opacity-50 text-end" data-i18n="lp_blog_date2">02.11.23</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 py-3">
+              <div class="h-100 radius8 shadow overflow-hidden bg-white">
+                <img src="img/blog_thum.jpg" alt="img" class="w-100" />
+                <div class="px-3 pt-3 pb-2 d-grid gap-1">
+                  <h4 class="fs24 text-700 text-primary" data-i18n="lp_blog_title3">Article Title</h4>
+                  <h5 class="fs16 text-700 text-info" data-i18n="lp_blog_subtitle3">Article subtitle</h5>
+                  <p class="fs14 text-500 three_line_dots" data-i18n="lp_blog_text3">With fountain. we reduce the amount
+                    of plastic waste and we do it with our unique network of zero-waste beverage stations...</p>
+                  <p class="fs14 text-500 opacity-50 text-end" data-i18n="lp_blog_date3">02.11.23</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-center gap-4">
+            <a href="https://www.linkedin.com/company/fountaineco/"><img src="img/li.svg" alt="img" /></a>
+            <a href="https://www.instagram.com/fountain.eco/"><img src="img/in.svg" alt="img" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- news_section -->
+
+  <!-- site_footer -->
+  <footer class="site_footer">
+    <div class="container-md container-fluid">
+      <div class="row mt-5 pb-3">
+        <div class="col-xl-4 mb-3">
+          <a href="index.html" class="site_logo"><img src="img/logo.svg" alt="img" /></a>
+          <p class="fs14 text-500 mt-3" data-i18n="footer_shortDescription">Sustainable & personalisable beverages</p>
+          <div class="d-flex align-items-center justify-content-start gap-3 mt-4">
+            <a href="#"><img src="img/fb_mini.svg" alt="img" /></a>
+            <a href="#"><img src="img/tw_mini.svg" alt="img" /></a>
+            <a href="#"><img src="img/li_mini.svg" alt="img" /></a>
+            <a href="#"><img src="img/in_mini.svg" alt="img" /></a>
+          </div>
+        </div>
+        <div class="col-xl-8 py-xl-0 py-3">
+          <div class="row gap_x_64">
+            <div class="col-sm-4 mb-3 d-grid gap-4 mt-sm-0 mt-5">
+              <h4 class="fs20 text-600 text-primary" data-i18n="footer_about">About</h4>
+              <ul class="d-grid gap-3">
+                <li><a href="fountain.html" class="text-link fs16 text-500" data-i18n="menu_product">The fountain</a>
+                </li>
+                <li><a href="drinks.html" class="text-link fs16 text-500" data-i18n="menu_drink">Drinks</a></li>
+                <li><a href="mission.html" class="text-link fs16 text-500" data-i18n="menu_mission">Mission</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 mb-3 d-grid gap-4 mt-sm-0 mt-5">
+              <h4 class="fs20 text-600 text-primary" data-i18n="footer_legal">Legal</h4>
+              <ul class="d-grid gap-3">
+                <li><a href="privacy-policy.html" class="text-link fs16 text-500"
+                    data-i18n="footer_privacyPolicy">Privacy
+                    policy</a></li>
+                <li><a href="privacy-policy.html" class="text-link fs16 text-500" data-i18n="footer_cookiesPolicy">Cookies policy</a></li>
+                <li><a href="termsNcondition.html" class="text-link fs16 text-500"
+                    data-i18n="footer_termsConditions">Terms & conditions</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 mb-3 d-grid gap-4 mt-sm-0 mt-5">
+              <h4 class="fs20 text-600 text-primary" data-i18n="footer_help">Help</h4>
+              <ul class="d-grid gap-3">
+                <li><a href="faq.html" class="text-link fs16 text-500" data-i18n="footer_faq">FAQ</a></li>
+                <li><a href="contact-us.html" class="text-link fs16 text-500" data-i18n="footer_contact">Contact</a>
+                </li>
+                <li><a href="mailto:info@fountain.eco" class="text-link fs16 text-700">info@fountain.eco</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-12">
+          <p class="fs14 text-link" data-i18n="copyright">© Copyright 2023 - fountain</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- site_footer -->
+
+  <!-- language -->
+  <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
+  r@6.1.2/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="language.js"></script>
+
+  <!-- jquery script -->
+  <script src="js/jquery-3.7.0.min.js"></script>
+
+  <!-- bootstrap script -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- slicknav script -->
+  <script src="js/jquery.slicknav.min.js"></script>
+
+  <!-- bootstrap script -->
+  <script src="js/jquery.magnific-popup.min.js"></script>
+
+  <!-- bootstrap script -->
+  <script src="js/owl.carousel.min.js"></script>
+
+  <!-- main script -->
+  <script src="js/main.js"></script>
+
+
+</body>
+
 </html>

@@ -1,0 +1,33 @@
+/*------------------------------------------------------------------
+[Purple color template]
+
+Project     : p1-FountainHtml
+Version     : 1.0
+Author      : Md. Ekramul Hassan Avi
+Author URI  : https://www.tigertemplate.com
+-------------------------------------------------------------------*/
+
+.common_style .bg-light {
+  background-color: #f4f0fa !important;
+}
+
+.common_style .btn-info {
+  color: #fff;
+  border-color: #9f6ee0;
+  background-color: #9f6ee0;
+}
+.common_style .btn-info:hover {
+  color: #fff;
+  border-color: #8133ea;
+  background-color: #8133ea;
+}
+.site_nav_ul .active a,
+.site_nav_ul a:hover {
+  color: #9f6ee0 !important;
+}
+
+.slicknav_nav .active a,
+.site_nav_ul .active a,
+.site_nav_ul a:hover {
+  color: #9f6ee0 !important;
+}
