@@ -98,7 +98,15 @@
             hbspt.forms.create({
               region: "eu1",
               portalId: "143464770",
-              formId: "5c810d53-0dd7-440f-8bce-740d5dabba6a"
+              formId: "5c810d53-0dd7-440f-8bce-740d5dabba6a",
+              onFormReady: function () {
+                setTimeout(function () {
+                  var element = document.querySelector('.embedded-viral-link-ui');
+                  if (element) {
+                    element.parentNode.removeChild(element);
+                  }
+                }, 1000); // 1 second delay
+              }
             });
           </script>
         </div>
