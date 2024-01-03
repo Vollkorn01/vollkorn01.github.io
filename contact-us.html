@@ -98,19 +98,20 @@
             hbspt.forms.create({
               region: "eu1",
               portalId: "143464770",
-              formId: "5c810d53-0dd7-440f-8bce-740d5dabba6a",
-              onFormReady: function () {
-                setTimeout(function () {
-                  var element = document.querySelector('.embedded-viral-link-ui');
-                  if (element) {
-                    console.log('Element found:', element);
-                    element.parentNode.removeChild(element);
-                  } else {
-                    console.log('Element not found');
-                  }
-                }, 3000); // 1 second delay
-              }
+              formId: "5c810d53-0dd7-440f-8bce-740d5dabba6a"
             });
+          
+            window.onload = function() {
+              setTimeout(function () {
+                var element = document.querySelector('div[data-application-name="embedded-viral-link-ui"]');
+                if (element) {
+                  console.log('Element found:', element);
+                  element.parentNode.removeChild(element);
+                } else {
+                  console.log('Element not found');
+                }
+              }, 3000); // 3 second delay
+            }
           </script>
         </div>
       </div>
