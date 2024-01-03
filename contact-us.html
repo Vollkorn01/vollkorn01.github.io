@@ -100,18 +100,21 @@
               portalId: "143464770",
               formId: "5c810d53-0dd7-440f-8bce-740d5dabba6a"
             });
-          
-            window.onload = function() {
-              setTimeout(function () {
-                var element = document.querySelector('div[data-application-name="embedded-viral-link-ui"]');
-                if (element) {
-                  console.log('Element found:', element);
-                  element.parentNode.removeChild(element);
-                } else {
-                  console.log('Element not found');
+
+            var observer = new MutationObserver(function (mutations) {
+              mutations.forEach(function (mutation) {
+                if (mutation.addedNodes) {
+                  mutation.addedNodes.forEach(function (node) {
+                    if (node.dataset && node.dataset.applicationName === 'embedded-viral-link-ui') {
+                      console.log('Element found:', node);
+                      node.parentNode.removeChild(node);
+                    }
+                  });
                 }
-              }, 3000); // 3 second delay
-            }
+              });
+            });
+
+            observer.observe(document.body, { childList: true, subtree: true });
           </script>
         </div>
       </div>
